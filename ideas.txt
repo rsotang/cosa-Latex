@@ -1,0 +1,11 @@
+la idea es escribir un programa (luego adaptable a app o no) que pueda escanear una pagina y convertirla en un documento latex preformateado.
+El programa de primeras parece que tendría dos partes principales, la parte encargada del OCR, que en principio parece que es mejor que funcione con Tesseract, 
+y luego alguna forma de formatear lo escaneado en latex, esto se podria implementar de varias formas.
+
+Primera: separar en dos partes estancas, ocr y formateo. El problema que se me ocurre en primeras es que Tesseract no tiene pinta de ser capaz de reconocer simbolos matematicos
+por lo que habría que implementar dentro de la propia red esos simbolos, (lo cual me parece un poco locura),
+
+Segunda: intentar implementar dos sistemas de ocr independientes, uno encargado del texto y otro encargado de latex/herramienta matematica. Esto sería un poco lioso
+porque habría simultaneamente muchos procesos interactuando entre si, pero si somos capaces de hacerlo, el formateo de latex sería opcional.
+
+Tareas de momento: acabar curso tensorflow, leer e instalar tesseract, buscar herramientas de escaneo matematicos o como implementar mathpix/snip de OS
